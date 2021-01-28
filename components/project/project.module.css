@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Parisienne&display=swap");
+@-webkit-keyframes bgSideIn {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+@keyframes bgSideIn {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@-webkit-keyframes popDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+}
+
+@keyframes popDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+}
+
+.hover:hover {
+  color: #F87171;
+  border-color: #F87171;
+  background-color: white;
+}
+
+.header {
+  font-family: 'Parisienne', cursive;
+}
+
+.box {
+  -webkit-clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
+          clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
+  height: 30vh;
+  -webkit-filter: grayscale(30%);
+          filter: grayscale(30%);
+}
+
+.box2 {
+  -webkit-clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 20% 100%);
+          clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 20% 100%);
+  height: 30vh;
+  -webkit-filter: grayscale(30%);
+          filter: grayscale(30%);
+}
+
+.bgSlide {
+  -webkit-animation: bgSideIn 1s;
+          animation: bgSideIn 1s;
+}
+
+.modalStyle {
+  position: absolute;
+  top: 20vh;
+  left: 30vw;
+  right: 30vw;
+  bottom: 10vh;
+  background-color: white !important;
+  border-radius: 15px;
+  border: #F87171 3px solid;
+  -webkit-animation: popDown 0.5s;
+          animation: popDown 0.5s;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/*# sourceMappingURL=project.module.css.map */

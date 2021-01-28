@@ -1,0 +1,17 @@
+@keyframes popDown{
+ 0%{transform: translateY(-100px);}
+}
+
+.fix{
+    position: fixed;
+    top: 0px !important;
+    left: 0px !important;
+    right: 0px !important;
+    animation: popDown 0.5s;
+    
+}
+
+.pop{
+    animation: popDown 0.3s;
+}
+

@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+@keyframes bgSideIn{
+    0%{transform: translateX(-100%);}
+   }
+
+@keyframes popDown{
+    0%{transform: translateY(-100%);}
+   }
+
+.hover:hover{
+    color: #F87171;
+    border-color: #F87171;
+    background-color: white;
+     
+}
+
+
+.header{
+    font-family: 'Parisienne', cursive;
+}
+
+.box{
+    clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
+    height: 30vh;
+    filter: grayscale(30%);
+}
+
+.box2{
+    clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 20% 100%);
+    height: 30vh;
+    filter: grayscale(30%); 
+}
+
+.bgSlide{
+    animation: bgSideIn 1s;
+}
+
+.modalStyle{
+    position: absolute;
+    top: 20vh;
+    left: 30vw;
+    right: 30vw;
+    bottom: 10vh;
+    background-color: white !important;
+    border-radius: 15px;
+    border: #F87171 3px solid;
+    animation: popDown 0.5s 
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgba($color: #000000, $alpha: 0.5);
+  }

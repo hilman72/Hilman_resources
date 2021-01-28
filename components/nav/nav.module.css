@@ -1,0 +1,28 @@
+@-webkit-keyframes popDown {
+  0% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+
+@keyframes popDown {
+  0% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+
+.fix {
+  position: fixed;
+  top: 0px !important;
+  left: 0px !important;
+  right: 0px !important;
+  -webkit-animation: popDown 0.5s;
+          animation: popDown 0.5s;
+}
+
+.pop {
+  -webkit-animation: popDown 0.3s;
+          animation: popDown 0.3s;
+}
+/*# sourceMappingURL=nav.module.css.map */
