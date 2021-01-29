@@ -41,24 +41,27 @@ export default function Banner(): JSX.Element {
         }}
       />
       <div className={`absolute flex flex-col ${styles.bannerTop}`}>
-        <div className={`flex flex-col h-20 mt-40`}>
+        <div className={`flex flex-col h-20 mt-40 sm:px-28 phone:px-12`}>
           <Typist className={`Typist text-white`}>
-            <span className="font-mono lg:text-8xl">
+            <span className="font-mono lg:text-8xl md:text-6xl sm:text-5xl phone:text-2xl">
               {" "}
               Hi! I`m Human ...oops
             </span>
             <Typist.Backspace count={13} delay={1000} />
-            <span className="font-mono lg:text-8xl"> Hilman</span>
+            <span className="font-mono lg:text-8xl md:text-6xl sm:text-5xl phone:text-2xl">
+              {" "}
+              Hilman
+            </span>
             <Typist.Delay ms={1000} />
             <br />
             <br />
-            <p className="font-mono lg:text-2xl">
+            <p className="font-mono lg:text-2xl md:text-2xl sm:text-xl phone:text-md">
               {" "}
               A Dedicated Full-Stack Software Engineer
             </p>
           </Typist>
         </div>
-        <div className="text-white mt-60 lg:text-7xl animate-bounce">
+        <div className="text-white mt-60 sm:text-7xl phone:text-5xl animate-bounce">
           <Link activeClass="active" to="about" spy={true} smooth={true}>
             <CgChevronDoubleDown
               className={`cursor-pointer mr-6 ${styles.hover}`}

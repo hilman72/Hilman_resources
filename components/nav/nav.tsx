@@ -28,21 +28,24 @@ export default function Navbar(): JSX.Element {
         fixed ? `${styles.fix} ` : ""
       }`}
     >
-      <div className="p-3 ml-60 cursor-pointer">
+      <div className="py-3 lg:px-3 md:px-2 md:ml-60 sm:ml-28 phone:ml-12 cursor-pointer">
         <Link activeClass="active" to="banner" spy={true} smooth={true}>
-          <SiHomeassistant className="lg:text-4xl" />
+          <SiHomeassistant className=" sm:text-3xl phone:text-2xl" />
         </Link>
       </div>
-      <div className="p-3 mr-40 ">
+      <div className="py-3 lg:px-3 md:px-2 lg:mr-40 md:mr-20 sm:mr-12 phone:mr-2">
         <li className="flex">
           <p
             onMouseEnter={() => setMouse1(true)}
             onMouseLeave={() => setMouse1(false)}
-            className="w-40 flex justify-center cursor-pointer"
+            className="lg:w-40 md:w-32 sm:w-28 phone:w-16 flex justify-center cursor-pointer"
           >
             {mouse1 ? (
-              //   <animated.div style={props}>About Me</animated.div>
-              <p className={`lg:text-2xl ${mouse1 ? `${styles.pop}` : ""}`}>
+              <p
+                className={`md:text-2xl  sm:text-lg phone:text-sm ${
+                  mouse1 ? `${styles.pop}` : ""
+                }`}
+              >
                 <Link
                   activeClass="active"
                   to="about"
@@ -61,17 +64,21 @@ export default function Navbar(): JSX.Element {
                 smooth={true}
                 offset={50}
               >
-                <BsPeopleCircle className="lg:text-3xl" />
+                <BsPeopleCircle className="lg:text-3xl md:text-3xl sm:text-3xl phone:text-2xl" />
               </Link>
             )}
           </p>
           <p
             onMouseEnter={() => setMouse2(true)}
             onMouseLeave={() => setMouse2(false)}
-            className="w-40 flex justify-center cursor-pointer"
+            className="lg:w-40 md:w-32 sm:w-28 phone:w-16 flex justify-center cursor-pointer"
           >
             {mouse2 ? (
-              <p className={`lg:text-2xl ${mouse2 ? `${styles.pop}` : ""}`}>
+              <p
+                className={`md:text-2xl sm:text-lg phone:text-sm  ${
+                  mouse2 ? `${styles.pop}` : ""
+                }`}
+              >
                 <Link
                   activeClass="active"
                   to="project"
@@ -83,24 +90,28 @@ export default function Navbar(): JSX.Element {
               </p>
             ) : (
               <Link activeClass="active" to="project" spy={true} smooth={true}>
-                <VscFileSubmodule className="lg:text-3xl" />
+                <VscFileSubmodule className="lg:text-3xl md:text-3xl sm:text-3xl phone:text-xl" />
               </Link>
             )}
           </p>
           <p
             onMouseEnter={() => setMouse3(true)}
             onMouseLeave={() => setMouse3(false)}
-            className="w-40 flex justify-center cursor-pointer"
+            className="lg:w-40 md:w-32 sm:w-28 phone:w-16 flex justify-center cursor-pointer"
           >
             {mouse3 ? (
-              <p className={`lg:text-2xl ${mouse3 ? `${styles.pop}` : ""}`}>
+              <p
+                className={`md:text-2xl sm:text-lg phone:text-sm  ${
+                  mouse3 ? `${styles.pop}` : ""
+                }`}
+              >
                 <Link activeClass="active" to="footer" spy={true} smooth={true}>
                   Contact
                 </Link>
               </p>
             ) : (
               <Link activeClass="active" to="footer" spy={true} smooth={true}>
-                <SiMinutemailer className="lg:text-3xl" />
+                <SiMinutemailer className="lg:text-3xl md:text-3xl sm:text-3xl phone:text-2xl" />
               </Link>
             )}
           </p>

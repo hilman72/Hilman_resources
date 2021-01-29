@@ -31,10 +31,14 @@ export default function Project(): JSX.Element {
   }
 
   return (
-    <div className="p-32 min-h-screen bg-gray-200">
-      <div className="grid grid-rows-5 gap-10 ">
+    <div className="py-32 lg:px-32 min-h-screen bg-gray-200">
+      <div className="grid md:grid-rows-5 sm:grid-rows-7 gap-10 ">
         <div className="row-span-1 flex flex-col justify-center items-center">
-          <div className={` pb-6 lg:text-7xl ${styles.header}`}>Project</div>
+          <div
+            className={` md:pb-6 phone:pb-2 lg:text-7xl md:text-6xl sm:text-5xl phone:text-4xl ${styles.header}`}
+          >
+            Project
+          </div>
           <hr
             className="bg-red-400"
             style={{
@@ -44,9 +48,9 @@ export default function Project(): JSX.Element {
           />
         </div>
 
-        <div className="mx-20 row-span-4 grid grid-cols-2 gap-4 flex items-center justify-items-center">
+        <div className="sm:mx-20 phone:mx-4 md:row-span-4 sm:row-span-6 grid lg:grid-cols-2 gap-4 flex items-center justify-items-center">
           <div
-            className={`w-full ${styles.box2} bg-canvas bg-cover`}
+            className={`w-full ${styles.box1} ${styles.boxSize} bg-canvas bg-cover`}
             onMouseEnter={() => setMouse1(true)}
             onMouseLeave={() => setMouse1(false)}
           >
@@ -56,7 +60,7 @@ export default function Project(): JSX.Element {
                   mouse1 ? `${styles.bgSlide}` : ""
                 }`}
               >
-                <div className="text-white lg:text-4xl p-2">
+                <div className="text-white lg:text-4xl md:text-3xl sm:text-2xl phone:text-xl  p-2">
                   The Canvas Boys
                 </div>
                 <hr
@@ -90,7 +94,7 @@ export default function Project(): JSX.Element {
             )}
           </div>
           <div
-            className={`w-full ${styles.box2} bg-m8 bg-cover`}
+            className={`w-full ${styles.box2} ${styles.boxSize} bg-m8 bg-cover`}
             onMouseEnter={() => setMouse2(true)}
             onMouseLeave={() => setMouse2(false)}
           >
@@ -100,7 +104,9 @@ export default function Project(): JSX.Element {
                   mouse2 ? `${styles.bgSlide}` : ""
                 }`}
               >
-                <div className="text-white lg:text-4xl p-2">MunchM8</div>
+                <div className="text-white lg:text-4xl md:text-3xl sm:text-2xl phone:text-xl p-2">
+                  MunchM8
+                </div>
                 <hr
                   className="bg-red-400 border-red-400"
                   style={{
@@ -132,7 +138,7 @@ export default function Project(): JSX.Element {
             )}
           </div>
           <div
-            className={`w-full ${styles.box} bg-ob bg-cover`}
+            className={`w-full ${styles.box3} ${styles.boxSize} bg-ob bg-cover`}
             onMouseEnter={() => setMouse3(true)}
             onMouseLeave={() => setMouse3(false)}
           >
@@ -142,7 +148,9 @@ export default function Project(): JSX.Element {
                   mouse3 ? `${styles.bgSlide}` : ""
                 }`}
               >
-                <div className="text-white lg:text-4xl p-2">Only Brands</div>
+                <div className="text-white lg:text-4xl md:text-3xl sm:text-2xl phone:text-xl p-2">
+                  Only Brands
+                </div>
                 <hr
                   className="bg-red-400 border-red-400"
                   style={{
@@ -174,7 +182,7 @@ export default function Project(): JSX.Element {
             )}
           </div>
           <div
-            className={`w-full ${styles.box} bg-about bg-cover`}
+            className={`w-full ${styles.box4} ${styles.boxSize} bg-about bg-cover`}
             onMouseEnter={() => setMouse4(true)}
             onMouseLeave={() => setMouse4(false)}
           >
@@ -184,7 +192,7 @@ export default function Project(): JSX.Element {
                   mouse4 ? `${styles.bgSlide}` : ""
                 }`}
               >
-                <div className="text-white lg:text-4xl p-2">
+                <div className="text-white lg:text-4xl md:text-3xl sm:text-2xl phone:text-xl p-2">
                   Human-Resources
                 </div>
                 <hr

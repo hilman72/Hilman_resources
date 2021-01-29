@@ -35,12 +35,12 @@ const InModal = (props) => {
       </div>
 
       <div className="bg-gray-800 rounded-b-xl text-white p-4 flex flex-col">
-        <div className="lg:text-xl">{props.data.detail}</div>
+        <div className="lg:text-xl phone:text-sm">{props.data.detail}</div>
         <br />
-        <div className="text-gray-400 lg:text-md">
+        <div className="text-gray-400 lg:text-base phone:text-xs">
           Skills Used: {props.data.skill}
         </div>
-        <div className="flex self-end mt-5">
+        <div className="flex self-end mt-5 phone:text-xs">
           {git.map((data, i) => {
             return (
               <button

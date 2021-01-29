@@ -20,16 +20,30 @@
     font-family: 'Parisienne', cursive;
 }
 
-.box{
-    clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
+.boxSize{
     height: 30vh;
     filter: grayscale(30%);
+    background-position: center;
+}
+
+.box1{
+    clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 20% 100%);
+   
 }
 
 .box2{
     clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 20% 100%);
-    height: 30vh;
-    filter: grayscale(30%); 
+    
+}
+
+.box3{
+    clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
+ 
+}
+
+.box4{
+    clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
+    
 }
 
 .bgSlide{
@@ -55,4 +69,67 @@
     right: 0;
     bottom: 0;
     background-color:rgba($color: #000000, $alpha: 0.5);
+  }
+
+  @media screen and (max-width: 1024px) and (min-width: 768px){
+    .box2{
+       
+        clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%)
+        
+    }
+    
+    .box3{
+        clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 20% 100%);
+     
+    }
+    .modalStyle{
+        position: absolute;
+        top: 20vh;
+        left: 15vw;
+        right: 15vw;
+        bottom: 10vh;
+        
+    }
+  }
+  
+  @media screen and (max-width: 768px) and (min-width: 640px){
+    .box2{
+       
+        clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%)
+        
+    }
+    
+    .box3{
+        clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 20% 100%);
+     
+    }
+    .modalStyle{
+        position: absolute;
+        top: 20vh;
+        left: 15vw;
+        right: 15vw;
+        bottom: 10vh;
+        
+    }
+  }
+  
+  @media screen and (max-width: 640px){
+    .box2{
+       
+        clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%)
+        
+    }
+    
+    .box3{
+        clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 20% 100%);
+     
+    }
+    .modalStyle{
+        position: absolute;
+        top: 8vh;
+        left: 8vw;
+        right: 12vw;
+        bottom: 10vh;
+        
+    }
   }
