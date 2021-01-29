@@ -1,4 +1,3 @@
-import { useState } from "react";
 import styles from "./modal.module.scss";
 import Link from "next/link";
 
@@ -34,8 +33,10 @@ const InModal = (props) => {
         </Swiper>
       </div>
 
-      <div className="bg-gray-800 rounded-b-xl text-white p-4 flex flex-col">
-        <div className="lg:text-xl phone:text-sm">{props.data.detail}</div>
+      <div className="bg-gray-800 rounded-b-xl p-4 flex flex-col">
+        <div className="lg:text-xl phone:text-sm text-white">
+          {props.data.detail}
+        </div>
         <br />
         <div className="text-gray-400 lg:text-base phone:text-xs">
           Skills Used: {props.data.skill}
