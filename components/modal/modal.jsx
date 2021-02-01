@@ -26,7 +26,7 @@ const InModal = (props) => {
           {photo.map((data, i) => {
             return (
               <SwiperSlide>
-                <img key={i} src={data} />
+                <img rel="preload" key={i} src={data} />
               </SwiperSlide>
             );
           })}
